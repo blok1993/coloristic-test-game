@@ -10,30 +10,67 @@
     <meta name="robots" content="noindex,nofollow">
     <link href="css/main.css" rel="stylesheet">
 </head>
-<body class="_hover">
+<body>
 <div id="page_wrap" class="page_wrap">
     <div id="page_content_wrap" class="page_content_wrap">
         <div class="page_content">
             <div id="table_content" class="table_content">
                 <div class="game_title">Колористический тест</div>
-                    <div class="result_score">
-                        <div>Ваш результат</div>
-                        <div id="score_value" class="score_value">0</div>
-                        <div class="score_share_wrap">
-                        <div id="score_share" class="score_share">Поделиться</div>
+                <div class="result_score">
+                    <div>Ваш результат</div>
+                    <div id="score_value" class="score_value">0</div>
+                    <div class="score_share_wrap">
+                        <div id="score_share" class="score_share"></div>
                     </div>
                 </div>
-<!--                <div id="table_wrap" class="table_wrap opened">-->
-<!--                    <ul id="table" class="table">-->
-<!--                        <li class="row you">-->
-<!--                            <span class="place">1.</span>-->
-<!--                            <span class="score">3</span>-->
-<!--                            <div class="name">Denis Tokarev</div>-->
-<!--                        </li>-->
-<!--                    </ul>-->
-<!--                </div>-->
+                <div class="game_field">
+                    <div id="timer">--:--</div>
+                    <div id="qNumber">1 / 10</div>
+                    <div id="question"></div>
+                    <div id="result">Баллы: 0</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="page_footer_wrap">
+        <div class="page_footer">
+            <div class="answers-block">
+                <div class="answers-block__row">
+                    <div data-num="1" class="answer-item">
+                        <button data-num="1"
+                                onclick="answer(1)"
+                                class="answer-button answer-num-1">оранжево - желтый</button>
+                    </div>
+                    <div data-num="2" class="answer-item">
+                        <button data-num="2"
+                                onclick="answer(2)"
+                                class="answer-button answer-num-2">синий</button>
+                    </div>
+                </div>
+                <div class="answers-block__row">
+                    <div data-num="3" class="answer-item">
+                        <button data-num="3"
+                                onclick="answer(3)"
+                                class="answer-button answer-num-3">красный</button>
+                    </div>
+                    <div data-num="4" class="answer-item">
+                        <button data-num="4"
+                                onclick="answer(4)"
+                                class="answer-button answer-num-4">белый</button>
+                    </div>
+                </div>
+            </div>
+            <div class="button_wrap button_correct">
+                <div data-action="start" id="button_correct" class="button">
+                    <div class="icon"></div>
+                    <div class="icon_refresh"></div>
+                    <div class="icon_play"></div>
+                </div>
             </div>
         </div>
     </div>
 </div>
 <script src="js/main.js"></script>
+</body>
+</html>
